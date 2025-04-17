@@ -4,48 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Footer</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Include Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <footer class="bg-[#40E0D0] text-black">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-          <!-- Newsletter subscription -->
+  <footer class="w-full bg-[#4A937A] text-black">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Newsletter Subscription Area -->
+      <div class="md:flex md:justify-between md:items-center mb-8">
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-lg font-medium">Subscribe to our newsletter for updates.</h2>
+        </div>
+        <div class="flex w-full md:w-auto">
+          <!-- Newsletter Form -->
+          <form class="flex w-full md:w-auto">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="px-4 py-2 rounded-l text-gray-800 w-full md:w-64 focus:outline-none"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-[#E57F60] hover:bg-opacity-90 transition-colors duration-200 px-4 py-2 rounded-r">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Divider Line -->
+      <div class="border-t border-white border-opacity-30 my-6"></div>
+
+      <!-- Footer Links and Logo Area -->
+      <div class="md:flex md:justify-between">
+        <!-- Logo -->
+        <div class="mb-6 md:mb-0 md:order-last">
+          <h2 class="text-2xl font-light tracking-wider">
+            CODE<span class="tracking-tighter">SP_</span>CE
+          </h2>
+        </div>
+
+        <!-- Links Columns -->
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-8 md:gap-20">
+          <!-- Quick Links Column -->
           <div>
-            <p class="text-lg font-semibold mb-4 text-gray-100">Subscribe to our newsletter for updates.</p>
-            <div class="flex">
-              <input type="email" placeholder="Email Address" class="p-3 rounded-l-md w-full text-black" />
-              <button class="bg-orange-500 text-white px-4 py-3 rounded-r-md font-semibold hover:bg-orange-600 transition">Subscribe</button>
-            </div>
-          </div>
-      
-          <!-- Quick Links -->
-          <div>
-            <h3 class="text-lg font-semibold mb-4 text-gray-100">Quick Link</h3>
-            <ul class="space-y-2 text-gray-200">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Who We Are</a></li>
-              <li><a href="#">Our Philosophy</a></li>
+            <h3 class="font-medium mb-4">Quick Link</h3>
+            <ul>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="hover:text-gray-200 transition-colors duration-200"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="hover:text-gray-200 transition-colors duration-200"
+                >
+                  Who We Are
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="hover:text-gray-200 transition-colors duration-200"
+                >
+                  Our Philosophy
+                </a>
+              </li>
             </ul>
           </div>
-      
-          <!-- Technologies -->
+
+          <!-- Technologies Column -->
           <div>
-            <h3 class="text-lg font-semibold mb-4 text-gray-100">Technologies</h3>
-            <ul class="space-y-2 text-gray-200">
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
+            <h3 class="font-medium mb-4">Technologies</h3>
+            <ul>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="hover:text-gray-200 transition-colors duration-200"
+                >
+                  HTML
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="hover:text-gray-200 transition-colors duration-200"
+                >
+                  CSS
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="hover:text-gray-200 transition-colors duration-200"
+                >
+                  JavaScript
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-      
-        <!-- Divider -->
-        <div class="border-t border-orange-400 mt-12 mb-6"></div>
-      
-        <!-- Branding -->
-        <div class="text-left text-white font-semibold text-xl">
-          <span class="tracking-wider">CODE</span><span class="text-orange-400">SP▲CE</span>
-        </div>
-      </footer>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
