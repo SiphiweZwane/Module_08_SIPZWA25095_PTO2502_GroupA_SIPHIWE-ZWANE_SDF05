@@ -12,98 +12,104 @@
     <div class="container mx-auto px-4 py-8">
       <!-- Newsletter Subscription Area -->
       <div class="mb-8">
-        <h2 class="text-lg font-medium mb-4">Subscribe to our newsletter for updates.</h2>
-        <!-- Newsletter Form -->
-        <form class="flex max-w-md">
-          <input
-            type="email"
-            placeholder="Email Address"
-            class="px-4 py-2 rounded-l text-gray-800 w-full focus:outline-none"
-            required
-          />
-          <button
-            type="submit"
-            class="bg-[#E57F60] hover:bg-opacity-90 transition-colors duration-200 px-4 py-2 rounded-r"
-          >
-            Subscribe
-          </button>
-        </form>
+        <div class="w-full md:w-2/3 lg:w-1/2">
+          <h2 class="text-lg font-medium mb-4">Subscribe to our newsletter for updates.</h2>
+          <!-- Newsletter Form -->
+          <form class="flex items-center gap-[2px]">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="px-4 py-2 rounded-l text-gray-800 w-full focus:outline-none"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-[#E57F60] hover:bg-opacity-90 transition-colors duration-200 px-4 py-2 rounded-r"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
       </div>
 
       <!-- Divider Line -->
       <div class="border-t border-white border-opacity-30 my-6"></div>
 
-      <!-- Footer Links and Logo Area -->
-      <div class="md:flex md:justify-between">
-        <!-- Logo -->
-        <div class="mb-6 md:mb-0 md:order-last">
-          <h2 class="text-2xl font-light tracking-wider">
-            CODE<span class="tracking-tighter">SP_</span>CE
-          </h2>
+      <!-- Footer Links Area -->
+      <div class="flex flex-col md:flex-row md:justify-between">
+        <!-- Logo placed at the left -->
+        <div class="mb-6 md:mb-0 md:mr-auto">
+          <img 
+            class="Footer-logo h-8" 
+            src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" 
+            alt="CodeSpace Logo"
+          />
         </div>
+        
+        <!-- Links Columns - Aligned to right -->
+        <div class="mb-8 md:mb-0 md:ml-auto">
+          <div class="grid grid-cols-2 gap-8 md:gap-20">
+            <!-- Quick Links Column -->
+            <div>
+              <h3 class="font-medium mb-4">Quick Link</h3>
+              <ul>
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="hover:text-gray-200 transition-colors duration-200"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="hover:text-gray-200 transition-colors duration-200"
+                  >
+                    Who We Are
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="hover:text-gray-200 transition-colors duration-200"
+                  >
+                    Our Philosophy
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-        <!-- Links Columns -->
-        <div class="grid grid-cols-2 md:grid-cols-2 gap-8 md:gap-20">
-          <!-- Quick Links Column -->
-          <div>
-            <h3 class="font-medium mb-4">Quick Link</h3>
-            <ul>
-              <li class="mb-2">
-                <a
-                  href="#"
-                  class="hover:text-gray-200 transition-colors duration-200"
-                >
-                  Home
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  href="#"
-                  class="hover:text-gray-200 transition-colors duration-200"
-                >
-                  Who We Are
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  href="#"
-                  class="hover:text-gray-200 transition-colors duration-200"
-                >
-                  Our Philosophy
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Technologies Column -->
-          <div>
-            <h3 class="font-medium mb-4">Technologies</h3>
-            <ul>
-              <li class="mb-2">
-                <a
-                  href="#"
-                  class="hover:text-gray-200 transition-colors duration-200"
-                >
-                  HTML
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  href="#"
-                  class="hover:text-gray-200 transition-colors duration-200"
-                >
-                  CSS
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  href="#"
-                  class="hover:text-gray-200 transition-colors duration-200"
-                >
-                  JavaScript
-                </a>
-              </li>
-            </ul>
+            <!-- Technologies Column -->
+            <div>
+              <h3 class="font-medium mb-4">Technologies</h3>
+              <ul>
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="hover:text-gray-200 transition-colors duration-200"
+                  >
+                    HTML
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="hover:text-gray-200 transition-colors duration-200"
+                  >
+                    CSS
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="hover:text-gray-200 transition-colors duration-200"
+                  >
+                    JavaScript
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
